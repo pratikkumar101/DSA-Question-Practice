@@ -1,4 +1,5 @@
 #include "iostream"
+// #include "algorithm"
 using namespace std;
 
 int binarySearch(int arr[], int n, int key){
@@ -31,6 +32,7 @@ int main(){
     }
     int key;
     cin>>key;
+    // cout<<binary_search(arr,arr+n,key);
     cout<<binarySearch(arr,n,key)<<endl;
     return 0;
 }
