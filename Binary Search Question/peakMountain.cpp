@@ -1,12 +1,11 @@
-//Program to find the peak index in an Array using binary search
 #include "iostream"
 using namespace std;
 
 int peakMountain(int arr[], int n){
     int s = 0;
-    int e = n-1;
+    int e = n - 1;
     int mid = s + (e - s) / 2;
-    while(s<e){
+    while(s < e){
         if(arr[mid] < arr[mid + 1]){
             s = mid + 1;
         }
@@ -22,11 +21,9 @@ int main(){
     int arr[100];
     int n;
     cin>>n;
-    for (int i=0; i<n; i++){
+    for(int i = 0; i < n; i++){
         cin>>arr[i];
     }
-
-    cout<<peakMountain(arr, n);
-
+    cout << peakMountain(arr, n);
     return 0;
 }
