@@ -1,3 +1,4 @@
+//Program to find the peak index in an Array using binary search
 #include "iostream"
 using namespace std;
 
